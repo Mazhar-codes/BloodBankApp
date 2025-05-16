@@ -25,7 +25,6 @@ public class OtpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otp);
 
-        //Toolbar
         this.setTitle("Phone Verification");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
