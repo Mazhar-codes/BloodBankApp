@@ -42,17 +42,14 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        //Toolbar
         this.setTitle("Registration");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        //Progress Dialog
         pd = new ProgressDialog(this);
         pd.setMessage("Loading...");
         pd.setCancelable(true);
         pd.setCanceledOnTouchOutside(false);
 
-        //FirebaseDatabase Reference
         db_user = FirebaseDatabase.getInstance().getReference("users");
 
         inputemail = findViewById(R.id.input_userEmail);
