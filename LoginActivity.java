@@ -176,7 +176,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-//        callbackManager.onActivityResult(requestCode, resultCode, data);
+
 
         if (requestCode == 1113){
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
@@ -256,7 +256,7 @@ public class LoginActivity extends AppCompatActivity {
                     startActivity(new Intent(LoginActivity.this,Dashboard.class));
 
                 } else {
-                    // If sign in fails, display a message to the user.
+                   
                     Toast.makeText(LoginActivity.this, "Authentication failed.", Toast.LENGTH_SHORT).show();
 
                 }
